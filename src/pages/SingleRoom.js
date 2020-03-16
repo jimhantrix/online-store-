@@ -5,6 +5,6 @@ export default class SingleRoom extends
 
 Component {
   render() {
-    return<div>SingleRoom</div>;
+    return<div>Single Room</div>;
   }
 }
