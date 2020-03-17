@@ -9,8 +9,8 @@ state={
 }
 
 handleToggle =() => {
-  this.setState({isOpen:!this.state.isOpen})
-}
+  this.setState({isOpen:!this.state.isOpen});
+};
   render(){
     return (
     <nav className="navbar">
@@ -27,6 +27,7 @@ handleToggle =() => {
           <li>
           <Link to ="/">Home</Link>
           </li>
+
           <li>
           <Link to ="/rooms">Rooms</Link>
           </li>
