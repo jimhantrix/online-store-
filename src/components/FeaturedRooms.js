@@ -11,9 +11,9 @@ export default class FeaturedRooms extends Component{
 
     render() {
       let { loading, feautureRooms: rooms } = this.context;
-        rooms = rooms.map(rooms => {
-        return<Room key ={room.id} room ={room}/>
-      })
+        rooms = rooms.map(room => {
+        return<Room key ={rooms.id} room ={room}/>
+      });
 
       return (
         <section className ="featured-rooms">
@@ -21,9 +21,7 @@ export default class FeaturedRooms extends Component{
             <div className ="featured-rooms-center">
               { loading ? <Loading/> : rooms }
             </div>
-
         </section>
-
         );
     }
   }
