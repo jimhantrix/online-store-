@@ -14,7 +14,7 @@ return (
   <Hero>
   <Banner title="Perth Luxury Rooms" subtitle="Deluxe rooms starting at $299">
     <Link to ='rooms' className ="btn-primary">
-    Check ours rooms
+    Check our rooms
   </Link>
   </Banner>
   </Hero>

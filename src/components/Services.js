@@ -14,7 +14,7 @@ state={
   {
   icon:<FaHiking/>,
   title:"Great hikes",
-  info: 'Come and try our signature cocktail'
+  info: 'Come and try our signature cocktails'
   },
   {
   icon:<FaShuttleVan/>,
