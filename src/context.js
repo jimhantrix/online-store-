@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import items from './data';
-const RoomContext = React.createContext();
+import items from './data'
 
+const RoomContext = React.createContext();
 class RoomProvider extends Component {
 
 state = {
@@ -22,8 +22,7 @@ componentDidMount(){
     sortedRooms: rooms,
     loading: false
   });
-}
-
+};
 formatData(items){
   let tempItems =items.map(item =>{
     let id = item.sys.id
@@ -45,4 +44,11 @@ render(){
 
 const RoomConsumer = RoomContext.Consumer;
 
+export function withRoomConsumer(Component){
+  return function Consumerwrapper(props){
+    return <RoomConsumer>
+    {value=> <Component{...props} context={value}/>}
+    </RoomConsumer>
+  }
+}
 export { RoomProvider, RoomConsumer, RoomContext};
