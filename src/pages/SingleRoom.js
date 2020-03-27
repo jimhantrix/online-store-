@@ -17,7 +17,6 @@ constructor(props){
 }
 static contextType =RoomContext;
 //componentDidMount(){}
-
   render() {
     const {getRoom} =this.context;
     const room = getRoom (this.state.slug);
